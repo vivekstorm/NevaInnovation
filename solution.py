@@ -25,5 +25,5 @@ for l in labels:
             x,y,w,h=cv2.boundingRect(cnt)
             if w>50 and h>50:
                 output=image[y:y+h,x:x+w]
-                cv2.imwrite('output'+str(imgnum)+'.png',output)
+                cv2.imwrite(str(imgnum)+'.png',output)
         imgnum+=1
